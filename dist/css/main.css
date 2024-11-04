@@ -17,7 +17,7 @@
 }
 
 #bottom_nav span {
-    border-bottom:1px black dotted;
+    border-bottom: var(--bs-body-underline);
 }
 
 #dark_mode {
@@ -233,4 +233,13 @@
     writing-mode: vertical-rl;
     white-space: nowrap;
     padding-top: 0.25rem;
+}
+
+/* Animation for the small circle */
+.icon-tabler-toggle-left circle {
+    transition: transform 0.4s ease;
+}
+
+[data-bs-theme="dark"] .icon-tabler-toggle-left circle {
+    transform: translateX(8px); /* Adjust this value based on your design */
 }
